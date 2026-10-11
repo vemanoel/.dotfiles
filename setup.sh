@@ -11,11 +11,6 @@ sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser
 sudo zypper --gpg-auto-import-keys refresh brave-browser
 sudo zypper install --no-confirm --no-recommends brave-origin
 
-sudo zypper addrepo https://download.opensuse.org/repositories/home:fusionfuture:anki/openSUSE_Tumbleweed/home:fusionfuture:anki.repo
-sudo zypper --gpg-auto-import-keys refresh home_fusionfuture_anki
-sudo zypper install --no-confirm --no-recommends anki
-printf '\n' | anki
-
 sudo zypper install --no-confirm --no-recommends flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install -y flathub net.ankiweb.Anki
