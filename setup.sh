@@ -38,3 +38,6 @@ xfconf-query -c xfwm4 -p /general/button_layout -n -t string -s " |HMC"
 xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Iosevka Regular 10"
 
 xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s false
+
+xfconf-query -c xfce4-screensaver -p /lock/enabled -n -t bool -s false
+xfconf-query -c xfce4-screensaver -p /saver/enabled -n -t bool -s false
