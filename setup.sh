@@ -17,6 +17,10 @@ sudo flatpak install -y flathub net.ankiweb.Anki
 sudo zypper install --no-confirm --no-recommends kora-icon-theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
 
+sudo zypper install --no-confirm --no-recommends breeze-theme-cursors
+xfconf-query -c xsettings -p /Gtk/CursorThemeName -n -t string -s "Breeze_Light"
+xfconf-query -c xsettings -p /Gtk/CursorThemeSize -n -t int -s 22
+
 sudo zypper install --no-confirm --no-recommends iosevka-fonts
 xfconf-query -c xsettings -p /Gtk/FontName -n -t string -s "Iosevka Regular 10"
 xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Iosevka Regular 10"
