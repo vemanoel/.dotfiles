@@ -11,6 +11,10 @@ sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser
 sudo zypper --gpg-auto-import-keys refresh brave-browser
 sudo zypper install --no-confirm --no-recommends brave-origin
 
+sudo zypper addrepo https://download.opensuse.org/repositories/home:fusionfuture:anki/openSUSE_Tumbleweed/home:fusionfuture:anki.repo
+sudo zypper --gpg-auto-import-keys refresh home_fusionfuture_anki
+sudo zypper install --no-confirm --no-recommends anki
+
 sudo zypper install --no-confirm --no-recommends kora-icon-theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
 
