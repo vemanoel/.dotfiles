@@ -29,6 +29,6 @@ xfconf-query -c xsettings -p /Gtk/MonospaceFontName -n -t string -s "Iosevka Ter
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
 xfconf-query -c xfwm4 -p /general/theme -s "Greybird-geeko-dark"
 
-setxkbmap -layout us -variant intl
+xfconf-query -c keyboard-layout -p /Default/XkbDisable -n -t bool -s false
 xfconf-query -c keyboard-layout -p /Default/XkbLayout -n -t string -s "us"
 xfconf-query -c keyboard-layout -p /Default/XkbVariant -n -t string -s "intl"
