@@ -24,6 +24,7 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeSize -n -t int -s 20
 sudo zypper install --no-confirm --no-recommends iosevka-fonts
 xfconf-query -c xsettings -p /Gtk/FontName -n -t string -s "Iosevka Regular 10"
 xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Iosevka Regular 10"
+xfconf-query -c xfce4-terminal -p /font-name -n -t string -s "Iosevka Term 12"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -n -t string -s "Iosevka Term Regular 10"
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
@@ -41,3 +42,10 @@ xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s false
 
 xfconf-query -c xfce4-screensaver -p /lock/enabled -n -t bool -s false
 xfconf-query -c xfce4-screensaver -p /saver/enabled -n -t bool -s false
+
+xfconf-query -c thunar -p /shortcuts-icon-size -n -t string -s "THUNAR_ICON_SIZE_16"
+xfconf-query -c thunar -p /last-view -n -t string -s "ThunarIconView"
+xfconf-query -c thunar -p /misc-date-style -n -t string -s "THUNAR_DATE_STYLE_MMDDYYYY"
+xfconf-query -c thunar -p /misc-always-enable-split-view -n -t bool -s true
+xfconf-query -c thunar -p /last-show-hidden -n -t bool -s true
+xfconf-query -c thunar -p /misc-highlighting-enabled -n -t bool -s false
