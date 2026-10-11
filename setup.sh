@@ -32,3 +32,7 @@ xfconf-query -c xfwm4 -p /general/theme -s "Greybird-geeko-dark"
 xfconf-query -c keyboard-layout -p /Default/XkbDisable -n -t bool -s false
 xfconf-query -c keyboard-layout -p /Default/XkbLayout -n -t string -s "us"
 xfconf-query -c keyboard-layout -p /Default/XkbVariant -n -t string -s "intl"
+
+xfconf-query -c xfwm4 -p /general/title_alignment -n -t string -s "left"
+xfconf-query -c xfwm4 -p /general/button_layout -n -t string -s " |HMC"
+xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Iosevka Regular 10"
