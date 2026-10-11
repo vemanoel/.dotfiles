@@ -17,7 +17,5 @@ sudo flatpak install -y flathub net.ankiweb.Anki
 
 sudo zypper install --no-confirm --no-recommends kora-icon-theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
-
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
-
 xfconf-query -c xfwm4 -p /general/theme -s "Greybird-geeko-dark"
