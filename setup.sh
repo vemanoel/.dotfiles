@@ -43,6 +43,9 @@ xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s false
 xfconf-query -c xfce4-screensaver -p /lock/enabled -n -t bool -s false
 xfconf-query -c xfce4-screensaver -p /saver/enabled -n -t bool -s false
 
+xfconf-query -c xfce4-terminal -p /misc-menubar-default -n -t bool -s false
+xfconf-query -c xfce4-terminal -p /misc-default-geometry -n -t string -s "85x20"
+
 xfconf-query -c thunar -p /shortcuts-icon-size -n -t string -s "THUNAR_ICON_SIZE_16"
 xfconf-query -c thunar -p /last-view -n -t string -s "ThunarIconView"
 xfconf-query -c thunar -p /misc-date-style -n -t string -s "THUNAR_DATE_STYLE_MMDDYYYY"
