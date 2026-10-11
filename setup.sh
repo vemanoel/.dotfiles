@@ -36,3 +36,5 @@ xfconf-query -c keyboard-layout -p /Default/XkbVariant -n -t string -s "intl"
 xfconf-query -c xfwm4 -p /general/title_alignment -n -t string -s "left"
 xfconf-query -c xfwm4 -p /general/button_layout -n -t string -s " |HMC"
 xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Iosevka Regular 10"
+
+xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s false
