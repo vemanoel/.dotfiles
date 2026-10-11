@@ -19,8 +19,8 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
 
 sudo zypper install --no-confirm --no-recommends iosevka-fonts
 xfconf-query -c xsettings -p /Gtk/FontName -n -t string -s "Iosevka Regular 10"
-xfconf-query -c xsettings -p /Gtk/MonospaceFontName -n -t string -s "Iosevka Term Regular 10"
 xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Iosevka Regular 10"
+xfconf-query -c xsettings -p /Gtk/MonospaceFontName -n -t string -s "Iosevka Term Regular 10"
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
 xfconf-query -c xfwm4 -p /general/theme -s "Greybird-geeko-dark"
