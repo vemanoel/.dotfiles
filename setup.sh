@@ -31,3 +31,4 @@ xfconf-query -c xfwm4 -p /general/theme -s "Greybird-geeko-dark"
 
 setxkbmap -layout us -variant intl
 xfconf-query -c keyboard-layout -p /Default/XkbLayout -n -t string -s "us"
+xfconf-query -c keyboard-layout -p /Default/XkbVariant -n -t string -s "intl"
