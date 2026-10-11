@@ -14,6 +14,13 @@ sudo zypper install --no-confirm --no-recommends brave-origin
 sudo zypper addrepo https://download.opensuse.org/repositories/home:fusionfuture:anki/openSUSE_Tumbleweed/home:fusionfuture:anki.repo
 sudo zypper --gpg-auto-import-keys refresh home_fusionfuture_anki
 sudo zypper install --no-confirm --no-recommends anki
+printf '\n' | anki
+
+url=$(curl -sL https://api.github.com/repos/ankitects/anki/releases/latest | grep -oP 'https://[^"]+linux-x86_64.tar.zst')
+curl -fL "$url" -o anki.tar.zst
+tar -xf anki.tar.zst
+rm anki.tar.zst
+cd anki-*
 
 sudo zypper install --no-confirm --no-recommends kora-icon-theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
