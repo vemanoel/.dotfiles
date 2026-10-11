@@ -16,11 +16,9 @@ sudo zypper --gpg-auto-import-keys refresh home_fusionfuture_anki
 sudo zypper install --no-confirm --no-recommends anki
 printf '\n' | anki
 
-url=$(curl -sL https://api.github.com/repos/ankitects/anki/releases/latest | grep -oP 'https://[^"]+linux-x86_64.tar.zst')
-curl -fL "$url" -o anki.tar.zst
-tar -xf anki.tar.zst
-rm anki.tar.zst
-cd anki-*
+sudo zypper install --no-confirm --no-recommends flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install -y flathub net.ankiweb.Anki
 
 sudo zypper install --no-confirm --no-recommends kora-icon-theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
