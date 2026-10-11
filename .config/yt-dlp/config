@@ -2,12 +2,12 @@
 # open YouTube, run the command “yt-dlp”, and then close all YouTube tabs
 
 --js-runtimes "deno:/usr/bin/deno"
---cookies-from-browser "brave:~/.config/BraveSoftware/Brave-Origin-Nightly/Default"
+--cookies-from-browser "brave:$HOME/.config/BraveSoftware/Brave-Origin-Nightly/Default"
 --continue
 --restrict-filenames
 -f "bv*+ba/b"
 --merge-output-format mp4
 --remux-video mp4
---output "~/Downloads/yt-dlp/%(extractor)s/%(uploader)s/%(title)s.%(ext)s"
+--output "$HOME/Downloads/yt-dlp/%(extractor)s/%(uploader)s/%(title)s.%(ext)s"
 --abort-on-unavailable-fragments
 --abort-on-error
