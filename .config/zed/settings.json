@@ -8,7 +8,7 @@
 		},
 		"git_gutter": "hide",
 	},
-	"auto_update": true,
+	"auto_update": false,
 	"restore_on_startup": "empty_tab",
 	"session": {
 		"restore_unsaved_buffers": false,
