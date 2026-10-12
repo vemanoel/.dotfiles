@@ -1,3 +1,6 @@
+sudo zypper rr hd:/?device=/dev/disk/by-id/dm-name-ventoy
+sudo zypper refresh
+
 sudo zypper install --no-confirm --no-recommends telegram-desktop
 
 sudo zypper install --no-confirm --no-recommends deno yt-dlp
@@ -17,7 +20,7 @@ sudo flatpak install -y flathub net.ankiweb.Anki
 sudo zypper install --no-confirm --no-recommends kora-icon-theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "kora"
 
-sudo zypper install --no-confirm --no-recommends breeze-theme-cursors
+sudo zypper install --no-confirm --no-recommends breeze6-cursors
 xfconf-query -c xsettings -p /Gtk/CursorThemeName -n -t string -s "Breeze_Light"
 xfconf-query -c xsettings -p /Gtk/CursorThemeSize -n -t int -s 20
 
