@@ -1,4 +1,4 @@
-sudo zypper rr hd:/?device=/dev/disk/by-id/dm-name-ventoy
+sudo zypper removerepo hd:/?device=/dev/disk/by-id/dm-name-ventoy
 sudo zypper refresh
 
 sudo zypper install --no-confirm --no-recommends telegram-desktop
