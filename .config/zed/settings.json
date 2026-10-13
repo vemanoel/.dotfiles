@@ -103,7 +103,7 @@
 		"button": true,
 		"auto_open": {
 			"on_drop": false,
-			"on_create": false,
+			"on_create": true,
 			"on_paste": false,
 		},
 		"sort_mode": "directories_first",
