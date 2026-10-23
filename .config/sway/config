@@ -7,7 +7,7 @@ set $term foot
 set $rofi_cmd rofi -terminal '$term'
 set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 
-output * bg /usr/share/backgrounds/default.jxl fill
+# output * bg /usr/share/backgrounds/default.jxl fill
 
 input "type:keyboard" {
     xkb_layout us
