@@ -3,15 +3,38 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 
 sudo dnf install curl --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install sway swaybg --setopt=install_weak_deps=False --assumeyes
+sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
+sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install dunst libnotify --setopt=install_weak_deps=False --assumeyes
+sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
+sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
+sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install grim slurp --setopt=install_weak_deps=False --assumeyes
+sudo dnf install pipewire --setopt=install_weak_deps=False --assumeyes
+sudo dnf install wireplumber --setopt=install_weak_deps=False --assumeyes
+sudo dnf install pipewire-pulseaudio --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install imv --setopt=install_weak_deps=False --assumeyes
+sudo dnf install mpv --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install dunst --setopt=install_weak_deps=False --assumeyes
+sudo dnf install libnotify --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install grim --setopt=install_weak_deps=False --assumeyes
+sudo dnf install slurp --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
+sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install zip --setopt=install_weak_deps=False --assumeyes
+sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
+sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install rofi --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
+sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
+sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
 
