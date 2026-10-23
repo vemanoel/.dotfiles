@@ -6,12 +6,12 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 
 sudo dnf install curl --setopt=install_weak_deps=False --assumeyes
 
+sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
+sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
+
 sudo dnf install greetd --setopt=install_weak_deps=False --assumeyes
 sudo dnf install tuigreet --setopt=install_weak_deps=False --assumeyes
 sudo systemctl enable greetd.service
-
-sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
-sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
 sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
