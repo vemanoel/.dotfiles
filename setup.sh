@@ -13,7 +13,7 @@ sudo dnf install iosevka-term-fonts --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install htop --setopt=install_weak_deps=False --assumeyes
+sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
 
 flatpak install --user flathub net.ankiweb.Anki --assumeyes
 
