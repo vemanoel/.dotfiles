@@ -42,9 +42,7 @@ sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
 sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
-sudo dnf install gcc-c++ --setopt=install_weak_deps=False --assumeyes
-hx --grammar fetch
-hx --grammar build
+sudo dnf install helix-parsers --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install git --setopt=install_weak_deps=False --assumeyes
 
