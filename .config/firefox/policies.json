@@ -11,33 +11,33 @@
 			"Locked": true
 		},
 		"EncryptedMediaExtensions": {
-      "Enabled": true,
-      "Locked": true
-    },
-    "OfferToSaveLogins": false,
-    "OfferToSaveLoginsDefault": false,
-    "PasswordManagerEnabled": false,
-    "PrintingEnabled": false,
-    "DisableFirefoxAccounts": true,
-    "DisableFirefoxScreenshots": true,
-    "DisableFirefoxStudies": true,
-    "AppAutoUpdate": false,
-		"HardwareAcceleration": true,
-		"DisableTelemetry": true,
-		"IPProtectionAvailable": false,
-		"CrashReportsSubmit": {
-      "Enabled": false
-    },
-    "AIControls": {
-      "Default": {
-        "Value": "blocked",
-        "Locked": true
-      }
-    },
+	      "Enabled": true,
+	      "Locked": true
+	    },
+	    "OfferToSaveLogins": false,
+	    "OfferToSaveLoginsDefault": false,
+	    "PasswordManagerEnabled": false,
+	    "PrintingEnabled": false,
+	    "DisableFirefoxAccounts": true,
+	    "DisableFirefoxScreenshots": true,
+	    "DisableFirefoxStudies": true,
+	    "AppAutoUpdate": false,
+			"HardwareAcceleration": true,
+			"DisableTelemetry": true,
+			"IPProtectionAvailable": false,
+			"CrashReportsSubmit": {
+	      "Enabled": false
+	    },
+	    "AIControls": {
+	      "Default": {
+	        "Value": "blocked",
+	        "Locked": true
+	      }
+	    },
 		"SanitizeOnShutdown": {
 			"SiteSettings": false,
 			"Cache": false,
-      "Sessions": false,
+      		"Sessions": false,
 			"Cookies": false,
 			"FormData": false,
 			"History": false,
