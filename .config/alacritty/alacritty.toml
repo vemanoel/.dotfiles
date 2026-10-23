@@ -1,0 +1,22 @@
+[font]
+size = 13.0
+
+[font.normal]
+family = "Iosevka Term"
+style = "Regular"
+
+[font.bold]
+family = "Iosevka Term"
+style = "Bold"
+
+[font.italic]
+family = "Iosevka Term"
+style = "Italic"
+
+[font.bold_italic]
+family = "Iosevka Term"
+style = "Bold Italic"
+
+[cursor.style]
+shape = "Beam"
+blinking = "Never" 
