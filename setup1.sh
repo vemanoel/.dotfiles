@@ -1,3 +1,6 @@
+flatpak remote-add --user --if-not-exists \
+  flathub https://flathub.org/repo/flathub.flatpakrepo
+
 sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install git --setopt=install_weak_deps=False --assumeyes
@@ -10,7 +13,8 @@ sudo dnf install iosevka-term-fonts --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
 
-flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo dnf install htop --setopt=install_weak_deps=False --assumeyes
+
 flatpak install --user flathub net.ankiweb.Anki --assumeyes
 
-sudo dnf install htop --setopt=install_weak_deps=False --assumeyes
+flatpak install --user flathub org.telegram.desktop --assumeyes
