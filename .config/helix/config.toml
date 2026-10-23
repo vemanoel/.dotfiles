@@ -1,0 +1,58 @@
+theme = "gruvbox"
+
+[editor]
+mouse = false
+scrolloff = 8
+auto-pairs = false
+middle-click-paste = false
+scroll-lines = 5
+cursorline = true
+continue-comments = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
+auto-completion = true
+auto-format = true
+idle-timeout = 0
+completion-timeout = 0
+preview-completion-insert = false
+completion-trigger-len = 1
+completion-replace = false
+auto-info = false
+undercurl = true
+color-modes = true
+
+[editor.whitespace]
+render = "none"
+
+[editor.statusline]
+left = ["version-control", "file-name", "read-only-indicator", "file-modification-indicator", "diagnostics"]
+center = ["workspace-diagnostics"]
+right = ["mode", "spinner"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["hint", "warning", "error"]
+workspace-diagnostics = ["hint", "warning", "error"]
+
+[editor.lsp]
+auto-signature-help = false
+
+[editor.cursor-shape]
+normal = "block"
+insert = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+git-global = false
+
+[editor.search]
+wrap-around = false
+
+[editor.inline-diagnostics]
+other-lines = "disable"
+cursor-line = "hint"
+
+[editor.smart-tab]
+enable = false
