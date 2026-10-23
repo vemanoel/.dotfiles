@@ -6,7 +6,7 @@ set $right l
 set $term alacritty
 set $menu rofi -terminal '$term' -show combi -combi-modes drun#run -modes combi
 
-# output * bg /usr/share/backgrounds/default.jxl fill
+output * bg $HOME/.config/sway/wallpaper.jpg fill
 
 input "type:keyboard" {
     xkb_layout us
