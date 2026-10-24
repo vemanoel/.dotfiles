@@ -2,9 +2,11 @@
 
 shopt -s dotglob nullglob
 
-for dir in dotfiles/home dotfiles/etc; do
+root=$(dirname -- "$(realpath -- "$0")")
+
+for dir in "$root/home" "$root/etc"; do
     dst=$HOME
-    [ "$dir" = dotfiles/etc ] && dst=/etc
+    [ "$dir" = "$root/etc" ] && dst=/etc
 
     for src in "$dir"/*; do
         [ -e "$src" ] || [ -L "$src" ] || continue
