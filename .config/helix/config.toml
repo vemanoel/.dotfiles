@@ -16,7 +16,7 @@ completion-timeout = 0
 preview-completion-insert = false
 completion-trigger-len = 1
 completion-replace = false
-auto-info = false
+# auto-info = false
 undercurl = true
 color-modes = true
 
