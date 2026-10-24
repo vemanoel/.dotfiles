@@ -3,4 +3,4 @@ vt = 1
 
 [default_session]
 user = "greetd"
-command = "tuigreet --remember --user-menu --cmd sway"
+command = "tuigreet --cmd sway"
