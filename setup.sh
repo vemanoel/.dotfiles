@@ -1,5 +1,21 @@
-rm -rf $HOME/.config
-mv .config $HOME
+#!/usr/bin/env bash
+
+shopt -s dotglob nullglob
+
+for dir in dotfiles/home dotfiles/etc; do
+    dst=$HOME
+    [ "$dir" = dotfiles/etc ] && dst=/etc
+
+    for src in "$dir"/*; do
+        [ -e "$src" ] || [ -L "$src" ] || continue
+
+        sudo=
+        [ "$dst" = /etc ] && sudo=sudo
+
+        $sudo rm -rf -- "$dst/${src##*/}" &&
+        $sudo cp -a -- "$src" "$dst/${src##*/}"
+    done
+done
 
 sudo dnf install flatpak --setopt=install_weak_deps=False --assumeyes
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
