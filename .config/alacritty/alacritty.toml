@@ -20,3 +20,6 @@ style = "Bold Italic"
 [cursor.style]
 shape = "Beam"
 blinking = "Never" 
+
+[general]
+import = ["$HOME/.config/alacritty/themes/themes/gruvbox.toml"]
