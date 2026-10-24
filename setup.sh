@@ -42,7 +42,7 @@ sudo dnf install pipewire-pulseaudio --setopt=install_weak_deps=False --assumeye
 sudo dnf install imv --setopt=install_weak_deps=False --assumeyes
 sudo dnf install mpv --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install dunst --setopt=install_weak_deps=False --assumeyes
+sudo dnf install mako --setopt=install_weak_deps=False --assumeyes
 sudo dnf install libnotify --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install grim --setopt=install_weak_deps=False --assumeyes
