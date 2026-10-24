@@ -83,3 +83,5 @@ sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
 flatpak install --user flathub net.ankiweb.Anki --assumeyes
 
 flatpak install --user flathub org.telegram.desktop --assumeyes
+
+sudo reboot
