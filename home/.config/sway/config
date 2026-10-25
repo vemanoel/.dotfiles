@@ -44,6 +44,9 @@ bindsym $mod+d exec $menu
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
+bindsym $mod+Shift+p exec $HOME/.config/sway/scripts/screenshot.sh full
+bindsym $mod+p exec $HOME/.config/sway/scripts/screenshot.sh area
+
 bindsym $mod+Shift+u exec $HOME/.config/sway/scripts/volume.sh up
 bindsym $mod+Shift+d exec $HOME/.config/sway/scripts/volume.sh down
 
