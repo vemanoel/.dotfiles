@@ -22,7 +22,7 @@ seat "*" {
 
 bar {
     position top
-    # font pango:JetBrains Mono 10
+    font pango:Iosevka Aile 10
     height 19
     colors {
         swaybar_command swaybar
