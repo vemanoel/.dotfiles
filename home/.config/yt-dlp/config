@@ -8,6 +8,6 @@
 -f "bv*+ba/b"
 --merge-output-format mp4
 --remux-video mp4
---output "$HOME/Downloads/yt-dlp/%(extractor)s/%(uploader)s/%(title)s.%(ext)s"
+--output "$HOME/Documents/downloads/yt-dlp/%(extractor)s/%(uploader)s/%(title)s.%(ext)s"
 --abort-on-unavailable-fragments
 --abort-on-error
