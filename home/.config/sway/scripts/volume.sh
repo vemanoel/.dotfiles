@@ -27,7 +27,7 @@ send_notification() {
 
     volume=$(wpctl get-volume "$SINK" | awk '{printf "%.0f%%", $2 * 100}')
 
-    notify-send --app-name="Volume" --replace-id="$NOTIFY_ID" "Áudio" "Volume: $volume"
+    notify-send --hint string:x-canonical-private-synchronous:volume "Volume" $volume
 }
 
 set_volume "$1"
