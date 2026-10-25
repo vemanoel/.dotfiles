@@ -21,6 +21,9 @@ for dir in "$root/home" "$root/etc"; do
     done
 done
 
+sudo dnf clean all
+sudo dnf makecache --refresh
+
 sudo dnf install flatpak --setopt=install_weak_deps=False --assumeyes
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
@@ -74,6 +77,7 @@ sudo dnf install golang --setopt=install_weak_deps=False --assumeyes
 sudo dnf install gopls --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf copr enable peterwu/iosevka --assumeyes
+sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
 sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install alacritty --setopt=install_weak_deps=False --assumeyes
