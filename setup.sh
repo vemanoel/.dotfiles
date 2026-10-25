@@ -2,6 +2,8 @@
 
 shopt -s dotglob nullglob
 
+find etc home -type f -name '*.sh' -exec chmod +x {} +
+
 root=$(dirname -- "$(realpath -- "$0")")
 
 for dir in "$root/home" "$root/etc"; do
