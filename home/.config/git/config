@@ -1,8 +1,8 @@
 [init]
-  defaultBranch = master
+  defaultBranch = main
+[core]
+  editor = hx
 [commit]
   verbose = true
 [credential]
   helper = store
-[core]
-  editor = zed --wait
