@@ -6,7 +6,7 @@ set $right l
 set $term alacritty
 set $menu rofi -terminal '$term' -show combi -combi-modes drun#run -modes combi
 
-exec dunst
+exec mako
 
 output * bg $HOME/.config/sway/wallpapers/japanese-girl.jpg fill
 
