@@ -8,7 +8,7 @@ set $menu rofi -terminal '$term' -show combi -combi-modes drun#run -modes combi
 
 exec mako
 
-output * bg $HOME/.config/sway/wallpapers/japanese-girl.jpg fill
+output * bg $HOME/.config/sway/wallpapers/mountains.jpg fill
 
 input "type:keyboard" {
     xkb_layout us
