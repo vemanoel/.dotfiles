@@ -1,6 +1,6 @@
 {
 	"policies": {
-		"DownloadDirectory": "${home}/Downloads/firefox",
+		"DownloadDirectory": "${home}/Documents/downloads/firefox",
 		"PromptForDownloadLocation": false,
 		"SearchEngines": {
 			"Default": "Google"
