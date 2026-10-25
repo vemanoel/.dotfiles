@@ -77,6 +77,8 @@ sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 sudo dnf install alacritty --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
+sudo dnf copr enable nunodias/deno --assumeyes
+sudo dnf install deno --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
 
