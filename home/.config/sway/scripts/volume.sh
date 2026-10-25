@@ -25,7 +25,13 @@ set_volume() {
 send_notification() {
     local volume
 
-    volume=$(wpctl get-volume "$SINK" | awk '{printf "%.0f%%", $2 * 100}')
+    volume=$(wpctl get-volume $SINK)
+
+    if echo $volume | grep -q MUTED; then
+        volume="MUTED"
+    else
+        volume="$(echo $volume | awk '{print int($2*100)}')%"
+    fi
 
     notify-send --hint string:x-canonical-private-synchronous:volume "Volume" $volume
 }
