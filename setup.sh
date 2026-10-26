@@ -80,7 +80,7 @@ sudo dnf copr enable peterwu/iosevka --assumeyes
 sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
 sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install alacritty --setopt=install_weak_deps=False --assumeyes
+sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
 sudo dnf copr enable nunodias/deno --assumeyes
