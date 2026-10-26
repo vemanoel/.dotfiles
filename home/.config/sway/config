@@ -18,7 +18,7 @@ exec mako
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_SESSION_TYPE XDG_CURRENT_DESKTOP=sway
 
 output * adaptive_sync off
-output * bg $HOME/.config/sway/images/mountains.jpg fill
+output * bg $HOME/.config/sway/images/sunset.png fill
 
 input "type:keyboard" {
     xkb_layout us
