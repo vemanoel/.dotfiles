@@ -3,8 +3,8 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term alacritty
-set $menu fuzzel --terminal 'alacritty --command'
+set $term foot
+set $menu fuzzel
 
 exec mako
 
