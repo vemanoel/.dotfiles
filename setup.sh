@@ -2,24 +2,19 @@
 
 shopt -s dotglob nullglob
 
-find etc home -type f -name '*.sh' -name '*.desktop' -exec chmod +x {} +
+find . -type f -name '*.sh' -name '*.desktop' -exec chmod +x {} +
 
-root=$(dirname -- "$(realpath -- "$0")")
-
-for dir in "$root/home" "$root/etc"; do
-    dst=$HOME
-    [ "$dir" = "$root/etc" ] && dst=/etc
-
+root=$(dirname -- "$(realpath -- "$0")")/root
+while IFS=: read -r dir dst sudo; do
     for src in "$dir"/*; do
         [ -e "$src" ] || [ -L "$src" ] || continue
-
-        sudo=
-        [ "$dst" = /etc ] && sudo=sudo
-
         $sudo rm -rf -- "$dst/${src##*/}"
         $sudo cp -a -- "$src" "$dst/${src##*/}"
     done
-done
+done <<EOF
+$root/home/user:$HOME:
+$root/etc:/etc:sudo
+EOF
 
 sudo dnf clean all
 sudo dnf makecache --refresh
