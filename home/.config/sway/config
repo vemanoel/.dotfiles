@@ -50,11 +50,11 @@ client.focused_inactive $gray $gray $gray_fg $green $green
 focus_follows_mouse no
 smart_borders on
 default_border pixel 1
-default_floating_border pixel 1
-floating_modifier $mod normal
 smart_gaps on
 gaps outer 2
 gaps inner 5
+floating_modifier $mod normal
+default_floating_border pixel 1
 
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
