@@ -36,9 +36,7 @@ sudo dnf install greetd --setopt=install_weak_deps=False --assumeyes
 sudo dnf install tuigreet --setopt=install_weak_deps=False --assumeyes
 sudo systemctl enable greetd.service
 
-sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
-sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
-sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
+sudo dnf install fuzzel --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install pipewire --setopt=install_weak_deps=False --assumeyes
 sudo dnf install wireplumber --setopt=install_weak_deps=False --assumeyes
@@ -56,17 +54,14 @@ sudo dnf install slurp --setopt=install_weak_deps=False --assumeyes
 sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
 sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install zip --setopt=install_weak_deps=False --assumeyes
-sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
-sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
-
-sudo dnf install fuzzel --setopt=install_weak_deps=False --assumeyes
+sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
+sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
+sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
+sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
 sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
 sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
-
-sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
 sudo dnf install helix-parsers --setopt=install_weak_deps=False --assumeyes
@@ -81,6 +76,10 @@ sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
 sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install zip --setopt=install_weak_deps=False --assumeyes
+sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
+sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
 sudo dnf copr enable nunodias/deno --assumeyes
