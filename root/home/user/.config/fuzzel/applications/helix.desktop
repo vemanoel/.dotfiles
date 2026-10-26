@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Helix
+Name=helix
 Exec=/usr/bin/hx
 Terminal=true
 Type=Application
