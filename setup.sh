@@ -60,7 +60,7 @@ sudo dnf install zip --setopt=install_weak_deps=False --assumeyes
 sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install rofi --setopt=install_weak_deps=False --assumeyes
+sudo dnf install fuzzel --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
