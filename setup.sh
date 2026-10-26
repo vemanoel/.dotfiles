@@ -2,7 +2,7 @@
 
 shopt -s dotglob nullglob
 
-find etc home -type f -name '*.sh' -exec chmod +x {} +
+find etc home -type f -name '*.sh' -name '*.desktop' -exec chmod +x {} +
 
 root=$(dirname -- "$(realpath -- "$0")")
 
