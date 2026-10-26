@@ -4,7 +4,7 @@ set $down j
 set $up k
 set $right l
 set $term alacritty
-set $menu rofi -terminal '$term' -show combi -combi-modes drun#run -modes combi
+set $menu fuzzel --terminal 'alacritty --command'
 
 exec mako
 
