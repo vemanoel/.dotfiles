@@ -16,7 +16,7 @@ for dir in "$root/home" "$root/etc"; do
         sudo=
         [ "$dst" = /etc ] && sudo=sudo
 
-        $sudo rm -rf -- "$dst/${src##*/}" &&
+        $sudo rm -rf -- "$dst/${src##*/}"
         $sudo cp -a -- "$src" "$dst/${src##*/}"
     done
 done
