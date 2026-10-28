@@ -4,7 +4,7 @@ set -euo pipefail
 
 readonly SINK="@DEFAULT_AUDIO_SINK@"
 readonly STEP="5%"
-readonly MAX_VOLUME="0.5"
+readonly MAX_VOLUME="0.35"
 readonly NOTIFY_ID="42001"
 
 set_volume() {
