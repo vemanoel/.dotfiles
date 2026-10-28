@@ -88,4 +88,7 @@ flatpak install --user flathub net.ankiweb.Anki --assumeyes
 flatpak install --user flathub org.telegram.desktop --assumeyes
 flatpak override --user org.telegram.desktop --filesystem=home
 
+sudo dnf upgrade --refresh --assumeyes
+flatpak update --assumeyes
+
 sudo reboot
