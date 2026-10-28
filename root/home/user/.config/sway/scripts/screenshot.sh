@@ -18,4 +18,4 @@ case "${1:-}" in
         ;;
 esac
 
-notify-send -t 3000 "screenshot saved" "$FILEPATH"
+notify-send -t 3000 "screenshot saved" $FILEPATH
