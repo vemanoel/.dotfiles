@@ -22,10 +22,10 @@
 	    "DisableFirefoxScreenshots": true,
 	    "DisableFirefoxStudies": true,
 	    "AppAutoUpdate": false,
-			"HardwareAcceleration": true,
-			"DisableTelemetry": true,
-			"IPProtectionAvailable": false,
-			"CrashReportsSubmit": {
+		"HardwareAcceleration": true,
+		"DisableTelemetry": true,
+		"IPProtectionAvailable": false,
+		"CrashReportsSubmit": {
 	      	"Enabled": false
 	    },
 	    "AIControls": {
