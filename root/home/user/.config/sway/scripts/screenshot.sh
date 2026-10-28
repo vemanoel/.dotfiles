@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-readonly OUTDIR="$HOME/Documents/screenshots"
+readonly OUTDIR=$HOME/Documents/screenshots
 readonly FILENAME="$(date +%Y%m%d_%H%M%S).png"
-readonly FILEPATH="$OUTDIR/$FILENAME"
+readonly FILEPATH=$OUTDIR/$FILENAME
 
 mkdir -p $OUTDIR
 
