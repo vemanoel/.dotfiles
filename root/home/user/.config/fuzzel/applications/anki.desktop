@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=anki
-Exec=flatpak run org.telegram.desktop
+Exec=/usr/bin/flatpak run org.telegram.desktop
 Terminal=false
 Type=Application
