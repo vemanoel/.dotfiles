@@ -86,6 +86,7 @@
 	        "Type": "number"
 	      }
 	    },
+		"NoDefaultBookmarks": true,
 		"ManagedBookmarks": [
 			{
 				"toplevel_name": "bookmarks"
