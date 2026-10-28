@@ -85,6 +85,58 @@
 	        "Status": "locked",
 	        "Type": "number"
 	      }
-	    }
+	    },
+		"ManagedBookmarks": [
+			{
+				"toplevel_name": "bookmarks"
+			},
+			{
+				"name": "programming",
+				"children": [
+					{
+						"url": "https://roadmap.sh/",
+						"name": "roadmap.sh"
+					},
+					{
+						"url": "https://github.com/",
+						"name": "github"
+					},
+					{
+						"url": "https://go.dev/play/",
+						"name": "go playground"
+					},
+					{
+						"url": "https://forum.golangbridge.org/",
+						"name": "golangbridge forum"
+					},
+					{
+						"url": "https://leetcode.com/",
+						"name": "leetcode"
+					}
+				]
+			},
+			{
+				"name": "social media",
+				"children": [
+					{
+						"url": "https://www.youtube.com/",
+						"name": "youtube"
+					},
+					{
+						"url": "https://www.reddit.com/",
+						"name": "reddit"
+					}
+				]
+			},
+			{
+				"name": "games",
+				"children": [
+					{
+						"url": "https://cruzadasclube.com.br/jogo/categoria/id/1/n/cruzadas-classicas",
+						"name": "classic crosswords"
+					}
+				]
+			}
+		]
 	}
 }
