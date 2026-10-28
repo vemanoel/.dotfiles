@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=thunar
-Exec=env XDG_DATA_DIRS=/usr/local/share:/usr/share /usr/bin/thunar
+Exec=env XDG_DATA_DIRS=/usr/local/share:/usr/share thunar
 Terminal=false
 Type=Application
