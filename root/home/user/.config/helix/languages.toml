@@ -43,4 +43,4 @@ language-servers = ["gopls"]
 
 [[language]]
 name = "json"
-formatter = { command = "jq", args = ["."] }
+formatter = { command = "jq", args = [".", "--indent", "4", "--tab"] }
