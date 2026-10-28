@@ -6,10 +6,11 @@ find . -type f \( -name '*.sh' -o -name '*.desktop' \) -exec chmod +x {} +
 
 root=$(dirname -- "$(realpath -- "$0")")/root
 while IFS=: read -r dir dst sudo; do
-    for src in "$dir"/*; do
-        [ -e "$src" ] || [ -L "$src" ] || continue
-        $sudo rm -rf -- "$dst/${src##*/}"
-        $sudo cp -a -- "$src" "$dst/${src##*/}"
+    for src in $dir/*; do
+        [ -e $src ] || [ -L $src ] || continue
+        dst=$dst/${src##*/}
+        $sudo rm -rf -- $dst
+        $sudo cp -a -- $src $dst
     done
 done <<EOF
 $root/home/user:$HOME:
