@@ -2,18 +2,18 @@
 
 set -euo pipefail
 
-readonly SINK="@DEFAULT_AUDIO_SINK@"
-readonly STEP="5%"
-readonly MAX_VOLUME="0.35"
-readonly NOTIFY_ID="42001"
+readonly SINK=@DEFAULT_AUDIO_SINK@
+readonly STEP=5%
+readonly MAX_VOLUME=0.35
+readonly NOTIFY_ID=42001
 
 set_volume() {
     case "${1:-}" in
         up)
-            wpctl set-volume -l $MAX_VOLUME $SINK "${STEP}+"
+            wpctl set-volume -l $MAX_VOLUME $SINK ${STEP}+
             ;;
         down)
-            wpctl set-volume $SINK "${STEP}-"
+            wpctl set-volume $SINK ${STEP}-
             ;;
         *)
             echo "usage: $0 {up|down}" >&2
@@ -33,7 +33,7 @@ send_notification() {
         volume="$(echo $volume | awk '{print int($2*100)}')%"
     fi
 
-    notify-send --hint string:x-canonical-private-synchronous:volume "Volume" $volume
+    notify-send -h string:x-canonical-private-synchronous:volume "volume" $volume
 }
 
 set_volume "$1"
