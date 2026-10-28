@@ -10,13 +10,13 @@ readonly NOTIFY_ID="42001"
 set_volume() {
     case "${1:-}" in
         up)
-            wpctl set-volume -l "$MAX_VOLUME" "$SINK" "${STEP}+"
+            wpctl set-volume -l $MAX_VOLUME $SINK "${STEP}+"
             ;;
         down)
-            wpctl set-volume "$SINK" "${STEP}-"
+            wpctl set-volume $SINK "${STEP}-"
             ;;
         *)
-            echo "Usage: $0 {up|down}" >&2
+            echo "usage: $0 {up|down}" >&2
             exit 1
             ;;
     esac
