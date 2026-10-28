@@ -2,20 +2,20 @@
 
 set -euo pipefail
 
-readonly OUTDIR=$HOME/Documents/screenshots
+readonly OUTDIR=${HOME}/Documents/screenshots
 readonly FILENAME=$(date +%Y%m%d_%H%M%S).png
-readonly FILEPATH=$OUTDIR/$FILENAME
+readonly FILEPATH=${OUTDIR}/${FILENAME}
 
-mkdir -p $OUTDIR
+mkdir -p ${OUTDIR}
 
 case "${1:-}" in
     area)
         area=$(slurp) || exit 0
-        grim -g "$area" $FILEPATH
+        grim -g "${area}" ${FILEPATH}
         ;;
     *)
-        grim $FILEPATH
+        grim ${FILEPATH}
         ;;
 esac
 
-notify-send -t 3000 "screenshot saved" $FILEPATH
+notify-send -t 3000 "screenshot saved" ${FILEPATH}
