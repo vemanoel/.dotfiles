@@ -99,7 +99,12 @@
 				"Value": 180000,
 				"Status": "locked",
 				"Type": "number"
-			}
+			},
+			"toolkit.legacyUserProfileCustomizations.stylesheets": {
+		        "Value": true,
+		        "Status": "locked",
+				"Type": "boolean"
+		    }
 	    },
 		"NoDefaultBookmarks": true,
 		"ManagedBookmarks": [
