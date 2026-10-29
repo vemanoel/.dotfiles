@@ -60,6 +60,16 @@
 			}
 		},
 		"Preferences": {
+			"sidebar.revamp": {
+				"Value": true,
+				"Status": "locked",
+				"Type": "boolean"
+			},
+			"sidebar.verticalTabs": {
+				"Value": true,
+				"Status": "locked",
+				"Type": "boolean"
+			},
 			"ui.systemUsesDarkTheme": {
 				"Value": 1,
 				"Status": "locked",
