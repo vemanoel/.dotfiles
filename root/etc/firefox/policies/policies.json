@@ -60,31 +60,46 @@
 			}
 		},
 		"Preferences": {
-	      "ui.systemUsesDarkTheme": {
-	        "Value": 1,
-	        "Status": "locked",
-	        "Type": "number"
-	      },
-	      "ui.systemUsesDarkTheme": {
-	        "Value": 1,
-	        "Status": "locked",
-	        "Type": "number"
-	      },
-	      "browser.uidensity": {
-	        "Value": 1,
-	        "Status": "locked",
-	        "Type": "number"
-	      },
-	      "browser.theme.content-theme": {
-	        "Value": 0,
-	        "Status": "locked",
-	        "Type": "number"
-	      },
-	      "browser.theme.toolbar-theme": {
-	        "Value": 0,
-	        "Status": "locked",
-	        "Type": "number"
-	      }
+			"ui.systemUsesDarkTheme": {
+				"Value": 1,
+				"Status": "locked",
+				"Type": "number"
+			},
+			"ui.prefersReducedMotion": {
+			  "Value": 1,
+			  "Status": "locked",
+			  "Type": "number"
+			},
+			"ui.systemUsesDarkTheme": {
+				"Value": 1,
+				"Status": "locked",
+				"Type": "number"
+			},
+			"browser.uidensity": {
+				"Value": 1,
+				"Status": "locked",
+				"Type": "number"
+			},
+			"browser.theme.content-theme": {
+				"Value": 0,
+				"Status": "locked",
+				"Type": "number"
+			},
+			"browser.theme.toolbar-theme": {
+				"Value": 0,
+				"Status": "locked",
+				"Type": "number"
+			},
+			"browser.tabs.unloadOnLowMemory": {
+				"Value": true,
+				"Status": "locked",
+				"Type": "boolean"
+			},
+			"browser.tabs.min_inactive_duration_before_unload": {
+				"Value": 180000,
+				"Status": "locked",
+				"Type": "number"
+			}
 	    },
 		"NoDefaultBookmarks": true,
 		"ManagedBookmarks": [
