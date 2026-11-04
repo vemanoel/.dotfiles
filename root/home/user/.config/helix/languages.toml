@@ -1,7 +1,3 @@
-[language-server.gopls.config]
-hoverKind = "SingleLine"
-semanticTokens = false
-
 [[language]]
 name = "json"
 formatter = { command = "jq", args = [".", "--indent", "4", "--tab"] }
