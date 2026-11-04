@@ -1,6 +1,9 @@
 layer=overlay
 anchor=top-right
 max-visible=5
+history=0
+max-history=0
+markup=0
 default-timeout=2500
 
 icons=0
