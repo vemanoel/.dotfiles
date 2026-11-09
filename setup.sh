@@ -79,6 +79,7 @@ sudo dnf install just --setopt=install_weak_deps=False --assumeyes
 sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install zip --setopt=install_weak_deps=False --assumeyes
+sudo dnf install tar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
 
