@@ -29,6 +29,7 @@ sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
 sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
 sudo dnf install sway-systemd --setopt=install_weak_deps=False --assumeyes
 sudo dnf install dbus-tools --setopt=install_weak_deps=False --assumeyes
+systemctl --user show-environment
 
 sudo dnf install greetd --setopt=install_weak_deps=False --assumeyes
 sudo dnf install tuigreet --setopt=install_weak_deps=False --assumeyes
@@ -52,14 +53,16 @@ sudo dnf install slurp --setopt=install_weak_deps=False --assumeyes
 sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
 sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
-
 sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
 sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
 sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
 sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
 sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install dnf-plugins-core --setopt=install_weak_deps=False --assumeyes
+sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+sudo dnf install brave-origin --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
 sudo dnf install helix-parsers --setopt=install_weak_deps=False --assumeyes
@@ -68,9 +71,6 @@ sudo dnf install git --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install podman --setopt=install_weak_deps=False --assumeyes
 sudo dnf install podman-compose --setopt=install_weak_deps=False --assumeyes
-
-sudo dnf install golang --setopt=install_weak_deps=False --assumeyes
-sudo dnf install gopls --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf copr enable peterwu/iosevka --assumeyes
 sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
