@@ -134,3 +134,4 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 include "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
+include /etc/sway/config.d/*
