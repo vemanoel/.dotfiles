@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=firefox
+Name=brave
 Exec=/usr/bin/brave-origin-stable
 Terminal=false
 Type=Application
