@@ -28,7 +28,6 @@ sudo dnf install curl --setopt=install_weak_deps=False --assumeyes
 sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
 sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
 sudo dnf install sway-systemd --setopt=install_weak_deps=False --assumeyes
-systemctl --user show-environment
 
 sudo dnf install greetd --setopt=install_weak_deps=False --assumeyes
 sudo dnf install tuigreet --setopt=install_weak_deps=False --assumeyes
