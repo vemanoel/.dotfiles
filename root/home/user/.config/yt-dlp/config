@@ -2,7 +2,7 @@
 # open YouTube, run the command “yt-dlp”, and then close all YouTube tabs
 
 --js-runtimes "deno:/usr/bin/deno"
---cookies-from-browser "brave:$HOME/.config/BraveSoftware/Brave-Origin-Nightly/Default"
+--cookies-from-browser "brave:$HOME/.config/BraveSoftware/Brave-Origin/Default"
 --continue
 --restrict-filenames
 -f "bv*+ba/b"
