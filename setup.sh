@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 shopt -s dotglob nullglob
 
@@ -19,8 +19,6 @@ EOF
 
 sudo dnf clean all
 sudo dnf makecache --refresh
-
-sudo dnf install curl --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
 sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
@@ -48,10 +46,13 @@ sudo dnf install slurp --setopt=install_weak_deps=False --assumeyes
 sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
 sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
+sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
+
 sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
 sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
 sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
+
+sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
 sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
 
@@ -71,14 +72,7 @@ sudo dnf copr enable peterwu/iosevka --assumeyes
 sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
 sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install just --setopt=install_weak_deps=False --assumeyes
-
-sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
-
-sudo dnf install zip --setopt=install_weak_deps=False --assumeyes
-sudo dnf install tar --setopt=install_weak_deps=False --assumeyes
-sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
-sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
+sudo dnf install make --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
 sudo dnf install nodejs --setopt=install_weak_deps=False --assumeyes
