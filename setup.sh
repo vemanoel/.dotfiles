@@ -81,9 +81,8 @@ sudo dnf install unrar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install unzip --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
+sudo dnf install nodejs --setopt=install_weak_deps=False --assumeyes
 sudo dnf install ffmpeg-free --setopt=install_weak_deps=False --assumeyes
-sudo dnf copr enable nunodias/deno --assumeyes
-sudo dnf install deno --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
 
