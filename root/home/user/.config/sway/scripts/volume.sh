@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 sink=@DEFAULT_AUDIO_SINK@
 step=5%
