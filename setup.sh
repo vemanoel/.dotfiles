@@ -60,6 +60,10 @@ sudo dnf install dnf-plugins-core --setopt=install_weak_deps=False --assumeyes
 sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 sudo dnf install brave-origin --setopt=install_weak_deps=False --assumeyes
 
+sudo dnf copr enable peterwu/iosevka --assumeyes
+sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
+sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
+
 sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
 sudo dnf install helix-parsers --setopt=install_weak_deps=False --assumeyes
 
@@ -67,10 +71,6 @@ sudo dnf install git --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install podman --setopt=install_weak_deps=False --assumeyes
 sudo dnf install podman-compose --setopt=install_weak_deps=False --assumeyes
-
-sudo dnf copr enable peterwu/iosevka --assumeyes
-sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
-sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install make --setopt=install_weak_deps=False --assumeyes
 
