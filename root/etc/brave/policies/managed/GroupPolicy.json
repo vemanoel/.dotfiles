@@ -1,4 +1,12 @@
 {
+  "DownloadDirectory": "/home/${user_name}/Documents/downloads/brave",
+  "PromptForDownloadLocation": false,
+  "MemorySaverModeSavings": 2,
+  "HighEfficiencyModeEnabled": true,
+  "BackgroundModeEnabled": false,
+  "DefaultSearchProviderEnabled": true,
+  "DefaultSearchProviderName": "Google",
+  "DefaultSearchProviderSearchURL": "https://www.google.com/search?q={searchTerms}",
   "DiskCacheSize": 1,
   "ClearBrowsingDataOnExitList": [
     "cached_images_and_files"
