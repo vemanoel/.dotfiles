@@ -87,6 +87,5 @@ sudo dnf install ffmpeg-free --setopt=install_weak_deps=False --assumeyes
 sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf upgrade --refresh --assumeyes
-flatpak update --assumeyes
 
 sudo reboot
