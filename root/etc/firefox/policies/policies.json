@@ -37,10 +37,9 @@
     "ClearOnShutdown": {
       "SiteSettings": false,
       "Cache": true,
-      "Sessions": false,
-      "Cookies": false,
+      "CookiesAndStorage": false,
       "FormData": true,
-      "History": false,
+      "BrowsingHistoryAndDownloads": true,
       "Locked": true
     },
     "DisplayBookmarksToolbar": "newtab",
