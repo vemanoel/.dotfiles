@@ -20,9 +20,6 @@ EOF
 sudo dnf clean all
 sudo dnf makecache --refresh
 
-sudo dnf install flatpak --setopt=install_weak_deps=False --assumeyes
-flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
 sudo dnf install curl --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
@@ -89,11 +86,6 @@ sudo dnf copr enable nunodias/deno --assumeyes
 sudo dnf install deno --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
-
-flatpak install --user flathub net.ankiweb.Anki --assumeyes
-
-flatpak install --user flathub org.telegram.desktop --assumeyes
-flatpak override --user org.telegram.desktop --filesystem=home
 
 sudo dnf upgrade --refresh --assumeyes
 flatpak update --assumeyes
