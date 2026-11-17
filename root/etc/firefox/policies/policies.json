@@ -34,12 +34,12 @@
         "Locked": true
       }
     },
-    "SanitizeOnShutdown": {
+    "ClearOnShutdown": {
       "SiteSettings": false,
-      "Cache": false,
+      "Cache": true,
       "Sessions": false,
       "Cookies": false,
-      "FormData": false,
+      "FormData": true,
       "History": false,
       "Locked": true
     },
@@ -52,10 +52,6 @@
     "ExtensionSettings": {
       "uBlock0@raymondhill.net": {
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
-        "installation_mode": "force_installed"
-      },
-      "sponsorBlocker@ajay.app": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi",
         "installation_mode": "force_installed"
       }
     },
