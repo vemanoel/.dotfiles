@@ -1,0 +1,6 @@
+{
+  "DiskCacheSize": 1,
+  "ClearBrowsingDataOnExitList": [
+    "cached_images_and_files"
+  ]
+}
