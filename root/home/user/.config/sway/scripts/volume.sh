@@ -16,12 +16,12 @@ case "$1" in
         ;;
 esac
 
-volume=$(wpctl get-volume $sink)
+current=$(wpctl get-volume $sink)
 
-if echo $volume | grep -q MUTED; then
+if echo $current | grep -q MUTED; then
     msg="MUTED"
 else
-    msg="$(echo $volume | awk '{print int($2*100)}')%"
+    msg="$(echo $current | awk '{print int($2*100)}')%"
 fi
 
 notify-send -h string:x-canonical-private-synchronous:volume "volume" $msg
