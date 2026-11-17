@@ -49,8 +49,8 @@
       "Locked": true
     },
     "ExtensionSettings": {
-      "uBlock0@raymondhill.net": {
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+      "uBOLiteRedux@raymondhill.net": {
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin-lite/latest.xpi",
         "installation_mode": "force_installed"
       }
     },
