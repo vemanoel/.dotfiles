@@ -55,6 +55,11 @@
       }
     },
     "Preferences": {
+      "browser.startup.homepage": {
+        "Value": "about:blank",
+        "Status": "locked",
+        "Type": "string"
+      },
       "ui.systemUsesDarkTheme": {
         "Value": 1,
         "Status": "locked",
