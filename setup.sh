@@ -56,9 +56,7 @@ sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
 sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
 sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install dnf-plugins-core --setopt=install_weak_deps=False --assumeyes
-sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-sudo dnf install brave-origin --setopt=install_weak_deps=False --assumeyes
+sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf copr enable peterwu/iosevka --assumeyes
 sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
