@@ -54,11 +54,13 @@ gaps inner 5
 floating_modifier $mod normal
 default_floating_border pixel 1
 
-bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
+
+bindsym $mod+Return exec $HOME/.config/sway/scripts/launch_term.sh home
+bindsym $mod+Shift+Return exec $HOME/.config/sway/scripts/launch_term.sh cwd
 
 bindsym $mod+p exec $HOME/.config/sway/scripts/screenshot.sh area
 bindsym $mod+Shift+p exec $HOME/.config/sway/scripts/screenshot.sh full
