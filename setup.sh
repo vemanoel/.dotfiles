@@ -20,28 +20,23 @@ EOF
 sudo dnf clean all
 sudo dnf makecache --refresh
 
-sudo dnf install sway --setopt=install_weak_deps=False --assumeyes
-sudo dnf install swaybg --setopt=install_weak_deps=False --assumeyes
-sudo dnf install sway-systemd --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed sway swaybg
+sudo pacman --no-comfirm -Syu --needed sway-systemd
 
-sudo dnf install greetd --setopt=install_weak_deps=False --assumeyes
-sudo dnf install tuigreet --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed greetd greetd-tuigreet
 sudo systemctl enable greetd.service
 
-sudo dnf install fuzzel --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed fuzzel
 
-sudo dnf install pipewire --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed pipewire --setopt=install_weak_deps=False --assumeyes
 sudo dnf install wireplumber --setopt=install_weak_deps=False --assumeyes
 sudo dnf install pipewire-pulseaudio --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install imv --setopt=install_weak_deps=False --assumeyes
-sudo dnf install mpv --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed imv mpv
 
-sudo dnf install mako --setopt=install_weak_deps=False --assumeyes
-sudo dnf install libnotify --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed mako libnotify
 
-sudo dnf install grim --setopt=install_weak_deps=False --assumeyes
-sudo dnf install slurp --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed grim slurp
 
 sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
 sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
@@ -65,18 +60,15 @@ sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
 sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
 sudo dnf install helix-parsers --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install git --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed git
 
-sudo dnf install podman --setopt=install_weak_deps=False --assumeyes
-sudo dnf install podman-compose --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed podman podman-compose
 
 sudo dnf install make --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install yt-dlp --setopt=install_weak_deps=False --assumeyes
-sudo dnf install nodejs --setopt=install_weak_deps=False --assumeyes
-sudo dnf install ffmpeg-free --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed  yt-dlp deno ffmpeg
 
-sudo dnf install btop --setopt=install_weak_deps=False --assumeyes
+sudo pacman --no-comfirm -Syu --needed btop
 
 sudo dnf upgrade --refresh --assumeyes
 
