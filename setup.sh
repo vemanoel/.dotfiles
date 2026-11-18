@@ -17,59 +17,52 @@ $root/home/user:$HOME:
 $root/etc:/etc:sudo
 EOF
 
-sudo dnf clean all
-sudo dnf makecache --refresh
+# sudo dnf clean all
+# sudo dnf makecache --refresh
 
-sudo pacman --no-comfirm -Syu --needed sway swaybg
-sudo pacman --no-comfirm -Syu --needed sway-systemd
+sudo pacman --noconfirm -Syu --needed sway swaybg
+# sudo pacman --noconfirm -Syu --needed sway-systemd
 
-sudo pacman --no-comfirm -Syu --needed greetd greetd-tuigreet
+sudo pacman --noconfirm -Syu --needed greetd greetd-tuigreet
 sudo systemctl enable greetd.service
 
-sudo pacman --no-comfirm -Syu --needed fuzzel
+sudo pacman --noconfirm -Syu --needed fuzzel
 
-sudo pacman --no-comfirm -Syu --needed pipewire --setopt=install_weak_deps=False --assumeyes
-sudo dnf install wireplumber --setopt=install_weak_deps=False --assumeyes
-sudo dnf install pipewire-pulseaudio --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed pipewire pipewire-pulse wireplumber
 
-sudo pacman --no-comfirm -Syu --needed imv mpv
+sudo pacman --noconfirm -Syu --needed imv mpv
 
-sudo pacman --no-comfirm -Syu --needed mako libnotify
+sudo pacman --noconfirm -Syu --needed mako libnotify
 
-sudo pacman --no-comfirm -Syu --needed grim slurp
+sudo pacman --noconfirm -Syu --needed grim slurp
 
-sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
-sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed firefox
+
+# sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
 
 sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
-sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
-sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install xdg-desktop-portal-wlr --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
-sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
-sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
+# sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
 
-sudo dnf install firefox --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed  helix
 
-sudo dnf copr enable peterwu/iosevka --assumeyes
-sudo dnf install iosevka-aile-fonts --setopt=install_weak_deps=False --assumeyes
-sudo dnf install iosevka-term-fonts --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed git
 
-sudo dnf install helix --setopt=install_weak_deps=False --assumeyes
-sudo dnf install helix-parsers --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed podman podman-compose
 
-sudo pacman --no-comfirm -Syu --needed git
+sudo pacman --noconfirm -Syu --needed  make
 
-sudo pacman --no-comfirm -Syu --needed podman podman-compose
+sudo pacman --noconfirm -Syu --needed  yt-dlp deno ffmpeg
 
-sudo dnf install make --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed btop
 
-sudo pacman --no-comfirm -Syu --needed  yt-dlp deno ffmpeg
+# sudo dnf upgrade --refresh --assumeyes
 
-sudo pacman --no-comfirm -Syu --needed btop
-
-sudo dnf upgrade --refresh --assumeyes
-
-sudo reboot
+# sudo reboot
