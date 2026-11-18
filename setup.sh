@@ -8,9 +8,10 @@ root=$(dirname -- "$(realpath -- "$0")")/root
 while IFS=: read -r dir dst sudo; do
     for src in $dir/*; do
         [ -e $src ] || [ -L $src ] || continue
+        target=$dst/${src##*/}
         dst=$dst/${src##*/}
-        $sudo rm -rf -- $dst
-        $sudo cp -a -- $src $dst
+        $sudo rm -rf -- $target
+        $sudo cp -a -- $src $target
     done
 done <<EOF
 $root/home/user:$HOME:
