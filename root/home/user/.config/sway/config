@@ -31,7 +31,7 @@ seat "*" {
 bar {
     swaybar_command swaybar
     position top
-    font pango:JetBrains Mono 10
+    font pango:JetBrains Mono 11
     height 19
     colors {
         background $gray
