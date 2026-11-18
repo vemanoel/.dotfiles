@@ -51,15 +51,17 @@ sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
 # sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
 # sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
 
-sudo pacman --noconfirm -Syu --needed  helix
+sudo pacman --noconfirm -Syu --needed helix
+
+sudo pacman --noconfirm -Syu --needed ttf-jetbrains-mono
 
 sudo pacman --noconfirm -Syu --needed git
 
 sudo pacman --noconfirm -Syu --needed podman podman-compose
 
-sudo pacman --noconfirm -Syu --needed  make
+sudo pacman --noconfirm -Syu --needed make
 
-sudo pacman --noconfirm -Syu --needed  yt-dlp deno ffmpeg
+sudo pacman --noconfirm -Syu --needed yt-dlp deno ffmpeg
 
 sudo pacman --noconfirm -Syu --needed btop
 
