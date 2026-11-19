@@ -53,10 +53,6 @@ in nnn
 
 in foot
 
-# sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
-# sudo dnf install gvfs --setopt=install_weak_deps=False --assumeyes
-# sudo dnf install udisks2 --setopt=install_weak_deps=False --assumeyes
-
 in helix
 
 in git
