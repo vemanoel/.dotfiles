@@ -12,8 +12,8 @@ while IFS=: read -r src dst sudo; do
         $sudo rm -rf -- $target
         $sudo cp -a -- $path $target
     
-        case "${path##*.}" in
-            sh|desktop)
+        case $target in
+            *sh|*desktop)
                 $sudo chmod +x $target
                 ;;
         esac
