@@ -1,0 +1,30 @@
+[display]
+show_time = false
+greeting = "Welcome!"
+
+[layout]
+width = 60
+window_padding = 2
+container_padding = 1
+prompt_padding = 1
+
+[remember]
+username = true
+session = false
+user_session = true
+
+[secret]
+mode = "characters"
+characters = "*"
+
+[theme]
+border = "darkgray"
+text = "white"
+time = "yellow"
+container = "black"
+title = "lightyellow"
+greet = "lightgreen"
+prompt = "lightblue"
+input = "white"
+action = "lightred"
+button = "lightcyan"
