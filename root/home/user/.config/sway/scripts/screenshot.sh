@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 out=$HOME/Documents/screenshots
 file=$(date +%Y%m%d_%H%M%S).png
