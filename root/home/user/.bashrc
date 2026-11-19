@@ -5,3 +5,4 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export NNN_OPTS="H"
+export NNN_OPENER="$HOME/.config/nnn/plugins/opener"
