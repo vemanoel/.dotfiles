@@ -24,4 +24,4 @@ else
     msg="$(echo $current | awk '{print int($2*100)}')%"
 fi
 
-notify-send -h string:x-canonical-private-synchronous:volume "Volume" $msg
+notify-send -h string:x-canonical-private-synchronous:volume "volume" $msg
