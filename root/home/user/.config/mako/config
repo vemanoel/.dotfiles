@@ -4,7 +4,7 @@ max-visible=5
 history=0
 max-history=0
 markup=0
-default-timeout=2500
+default-timeout=3000
 
 icons=0
 
