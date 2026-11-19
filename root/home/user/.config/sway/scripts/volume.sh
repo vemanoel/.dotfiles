@@ -12,7 +12,7 @@ case $1 in
         wpctl set-volume $sink $step-
         ;;
     increase)
-        wpctl set-volume -l $max $sink $step+
+        wpctl set-volume $sink $step+ -l $max
         ;;
 esac
 
