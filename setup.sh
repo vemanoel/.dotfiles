@@ -17,11 +17,7 @@ $root/home/user:$HOME:
 $root/etc:/etc:sudo
 EOF
 
-# sudo dnf clean all
-# sudo dnf makecache --refresh
-
 sudo pacman --noconfirm -Syu --needed sway swaybg
-# sudo pacman --noconfirm -Syu --needed sway-systemd
 
 sudo pacman --noconfirm -Syu --needed greetd greetd-tuigreet
 sudo systemctl enable greetd.service
@@ -65,6 +61,4 @@ sudo pacman --noconfirm -Syu --needed yt-dlp deno ffmpeg
 
 sudo pacman --noconfirm -Syu --needed btop
 
-# sudo dnf upgrade --refresh --assumeyes
-
-# sudo reboot
+sudo reboot
