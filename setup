@@ -35,7 +35,6 @@ sudo pacman --noconfirm -Syu --needed \
     pipewire pipewire-pulse wireplumber \
     xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
 
-sudo systemctl enable greetd.service
-sudo systemctl enable paccache.timer
+sudo systemctl enable greetd.service paccache.timer
 
 sudo reboot
