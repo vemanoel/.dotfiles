@@ -11,7 +11,7 @@ while IFS=: read -r src dst sudo; do
         target=$dst/${path##*/}
 
         $sudo rm -rf -- $target
-        $sudo cp -- $path $target
+        $sudo cp -r -- $path $target
 
         $sudo chmod +x -- $target/**/*.{sh,desktop} 2>/dev/null
     done
