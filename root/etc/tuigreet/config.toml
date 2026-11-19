@@ -16,15 +16,3 @@ user_session = true
 [secret]
 mode = "characters"
 characters = "*"
-
-[theme]
-border = "darkgray"
-text = "white"
-time = "yellow"
-container = "black"
-title = "lightyellow"
-greet = "lightgreen"
-prompt = "lightblue"
-input = "white"
-action = "lightred"
-button = "lightcyan"
