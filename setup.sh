@@ -9,7 +9,6 @@ while IFS=: read -r dir dst sudo; do
     for src in $dir/*; do
         [ -e $src ] || [ -L $src ] || continue
         target=$dst/${src##*/}
-        dst=$dst/${src##*/}
         $sudo rm -rf -- $target
         $sudo cp -a -- $src $target
     done
