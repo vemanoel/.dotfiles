@@ -1,10 +1,11 @@
+set $scripts $HOME/.config/sway/scripts
+set $images $HOME/.config/sway/images
+
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
-set $menu env XDG_DATA_DIRS=$HOME/.config/fuzzel fuzzel
 
 set $gray #282828
 set $gray_fg #ddc7a1
@@ -13,10 +14,8 @@ set $green_fg #32302f
 set $red #ea6962
 set $red_fg #32302f
 
-exec mako
-
 output * adaptive_sync off
-output * bg $HOME/.config/sway/images/sunset.png fill
+output * bg $images/sunset.png fill
 
 input "type:keyboard" {
     xkb_layout us
@@ -55,18 +54,18 @@ floating_modifier $mod normal
 default_floating_border pixel 1
 
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec $menu
+bindsym $mod+d exec env XDG_DATA_DIRS=$HOME/.config/fuzzel fuzzel
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
-bindsym $mod+Return exec $HOME/.config/sway/scripts/launch_term.sh home
-bindsym $mod+Shift+Return exec $HOME/.config/sway/scripts/launch_term.sh cwd
+bindsym $mod+Return exec $scripts/launch_term.sh home
+bindsym $mod+Shift+Return exec $scripts/launch_term.sh cwd
 
-bindsym $mod+p exec $HOME/.config/sway/scripts/screenshot.sh area
-bindsym $mod+Shift+p exec $HOME/.config/sway/scripts/screenshot.sh full
+bindsym $mod+p exec $scripts/screenshot.sh area
+bindsym $mod+Shift+p exec $scripts/screenshot.sh full
 
-bindsym $mod+Shift+u exec $HOME/.config/sway/scripts/volume.sh increase
-bindsym $mod+Shift+d exec $HOME/.config/sway/scripts/volume.sh decrease
+bindsym $mod+Shift+u exec $scripts/volume.sh increase
+bindsym $mod+Shift+d exec $scripts/volume.sh decrease
 
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit?' -B 'Yes, exit' 'swaymsg exit'
 
@@ -134,6 +133,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+exec mako
 
 include "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
 include /etc/sway/config.d/*
