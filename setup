@@ -11,12 +11,8 @@ while IFS=: read -r src dst sudo; do
         target=$dst/${path##*/}
         $sudo rm -rf -- $target
         $sudo cp -- $path $target
-    
-        case $target in
-            *.sh|*.desktop)
-                $sudo chmod +x $target
-                ;;
-        esac
+
+        $sudo chmod +x -- $target/**/*.{sh,desktop} 2>/dev/null
     done
 done <<EOF
 $root/home/user:$HOME:
