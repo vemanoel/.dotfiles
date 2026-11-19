@@ -31,7 +31,7 @@ in greetd greetd-tuigreet
 in fuzzel
 in firefox foot nnn btop
 in mako libnotify
-in mpv imv
+in mpv swayimg
 in pacman-contrib
 in grim slurp
 in helix make git podman podman-compose
