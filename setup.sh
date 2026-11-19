@@ -28,17 +28,13 @@ alias in='sudo pacman --noconfirm -Syu --needed'
 in ttf-jetbrains-mono
 in sway swaybg jq
 in greetd greetd-tuigreet
-in firefox
 in fuzzel
+in firefox foot nnn btop
 in mako libnotify
 in mpv imv
 in grim slurp
-in nnn
-in foot
-in podman podman-compose
-in helix make git
+in helix make git podman podman-compose
 in yt-dlp deno ffmpeg
-in btop
 in pipewire pipewire-pulse wireplumber
 in xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
 
