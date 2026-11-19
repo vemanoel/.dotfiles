@@ -11,7 +11,7 @@ case "$1" in
         area=$(slurp) || exit 0
         grim -g "$area" $path
         ;;
-    *)
+    full)
         grim $path
         ;;
 esac
