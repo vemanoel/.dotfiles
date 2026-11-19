@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 sink=@DEFAULT_AUDIO_SINK@
 step=5%
@@ -18,10 +18,11 @@ esac
 
 current=$(wpctl get-volume $sink)
 
-if echo $current | grep -q MUTED; then
+if [[ $current == *MUTED* ]];; then
     msg="MUTED"
 else
-    msg="$(echo $current | awk '{print int($2*100)}')%"
+    read -r _ value <<< $current
+    msg=$(( ${value/./} ))%
 fi
 
 notify-send -h string:x-canonical-private-synchronous:volume "volume" $msg
