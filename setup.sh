@@ -10,10 +10,10 @@ while IFS=: read -r src dst sudo; do
 
         target=$dst/${path##*/}
         $sudo rm -rf -- $target
-        $sudo cp -a -- $path $target
+        $sudo cp -- $path $target
     
         case $target in
-            *sh|*desktop)
+            *.sh|*.desktop)
                 $sudo chmod +x $target
                 ;;
         esac
