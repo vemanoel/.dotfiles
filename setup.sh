@@ -34,7 +34,7 @@ sudo pacman --noconfirm -Syu --needed grim slurp
 
 sudo pacman --noconfirm -Syu --needed firefox
 
-sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
+sudo pacman --noconfirm -Syu --needed foot
 
 # sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
 # sudo dnf install xdg-desktop-portal-gtk --setopt=install_weak_deps=False --assumeyes
