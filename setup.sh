@@ -49,6 +49,8 @@ in imv
 in grim
 in slurp
 
+in nnn
+
 in foot
 
 # sudo dnf install Thunar --setopt=install_weak_deps=False --assumeyes
