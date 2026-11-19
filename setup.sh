@@ -2,16 +2,21 @@
 
 shopt -s dotglob nullglob
 
-find . -type f \( -name '*.sh' -o -name '*.desktop' \) -exec chmod +x {} +
-
 root=$(dirname -- $(realpath -- $0))/root
 
 while IFS=: read -r src dst sudo; do
     for path in $src/*; do
         [ -e $path ] || [ -L $path ] || continue
+
         target=$dst/${path##*/}
         $sudo rm -rf -- $target
         $sudo cp -a -- $path $target
+    
+        case "${path##*.}" in
+            sh|desktop)
+                $sudo chmod +x $target
+                ;;
+        esac
     done
 done <<EOF
 $root/home/user:$HOME:
