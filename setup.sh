@@ -34,9 +34,6 @@ sudo pacman --noconfirm -Syu --needed grim slurp
 
 sudo pacman --noconfirm -Syu --needed firefox
 
-# sudo dnf install firewalld --setopt=install_weak_deps=False --assumeyes
-# sudo dnf install NetworkManager --setopt=install_weak_deps=False --assumeyes
-
 sudo dnf install foot --setopt=install_weak_deps=False --assumeyes
 
 # sudo dnf install xdg-desktop-portal --setopt=install_weak_deps=False --assumeyes
