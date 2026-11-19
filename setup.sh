@@ -1,17 +1,17 @@
 #!/bin/sh
 
-shopt -s dotglob nullglob
-
 find . -type f \( -name '*.sh' -o -name '*.desktop' \) -exec chmod +x {} +
 
 root=$(dirname -- "$(realpath -- "$0")")/root
-while IFS=: read -r dir dst sudo; do
-    for src in $dir/*; do
-        [ -e $src ] || [ -L $src ] || continue
-        target=$dst/${src##*/}
-        $sudo rm -rf -- $target
-        $sudo cp -a -- $src $target
-    done
+
+while IFS=: read -r src dst sudo; do
+    find $src -mindepth 1 -maxdepth 1 -exec sh -ec '
+        for src do
+            dst=$dst/${src##*/}
+            $sudo rm -rf -- $dst
+            $sudo cp -a -- $src $dst
+        done
+    ' {} +
 done <<EOF
 $root/home/user:$HOME:
 $root/etc:/etc:sudo
