@@ -1,19 +1,19 @@
 #!/bin/sh
 
-readonly OUTDIR=$HOME/Documents/screenshots
-readonly FILENAME=$(date +%Y%m%d_%H%M%S).png
-readonly FILEPATH=$OUTDIR/$FILENAME
+out=$HOME/Documents/screenshots
+file=$(date +%Y%m%d_%H%M%S).png
+path=$out/$file
 
-mkdir -p $OUTDIR
+mkdir -p $out
 
 case "$1" in
     area)
         area=$(slurp) || exit 0
-        grim -g "$area" $FILEPATH
+        grim -g "$area" $path
         ;;
     *)
-        grim $FILEPATH
+        grim $path
         ;;
 esac
 
-notify-send -t 3000 "screenshot saved" $FILEPATH
+notify-send -t 3000 "screenshot saved" $path
