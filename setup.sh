@@ -4,7 +4,7 @@ shopt -s dotglob nullglob
 
 find . -type f \( -name '*.sh' -o -name '*.desktop' \) -exec chmod +x {} +
 
-root=$(dirname -- "$(realpath -- "$0")")/root
+root=$(dirname -- $(realpath -- $0))/root
 
 while IFS=: read -r src dst sudo; do
     for path in $src/*; do
