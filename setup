@@ -20,21 +20,20 @@ $root/home/user:$HOME:
 $root/etc:/etc:sudo
 EOF
 
-alias in='sudo pacman --noconfirm -Syu --needed'
-
-in ttf-jetbrains-mono
-in sway swaybg jq
-in greetd greetd-tuigreet
-in fuzzel
-in firefox foot nnn btop
-in mako libnotify
-in mpv swayimg
-in pacman-contrib
-in grim slurp
-in helix make git podman podman-compose
-in yt-dlp deno ffmpeg
-in pipewire pipewire-pulse wireplumber
-in xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+sudo pacman --noconfirm -Syu --needed \
+    ttf-jetbrains-mono \
+    sway swaybg jq \
+    greetd greetd-tuigreet \
+    fuzzel \
+    firefox foot nnn btop \
+    mako libnotify \
+    mpv swayimg \
+    pacman-contrib \
+    grim slurp \
+    helix make git podman podman-compose \
+    yt-dlp deno ffmpeg \
+    pipewire pipewire-pulse wireplumber \
+    xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
 
 sudo systemctl enable greetd.service
 sudo systemctl enable paccache.timer
