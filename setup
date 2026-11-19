@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-find . -type f \( -name '*.desktop' -o -exec grep -Ilx '#!/usr/bin/env bash' {} \; \) -exec chmod +x {} +
+find . -type f -name '*.desktop' -exec chmod +x {} +
+find . -type f -exec grep -Ilx '#!/usr/bin/env bash' {} + | xargs -r chmod +x
 
 sudo rm -rf /etc/{firefox,brave,greetd,tuigreet}
 sudo mv {firefox,brave,greetd,tuigreet} /etc
