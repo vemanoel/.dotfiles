@@ -4,7 +4,7 @@ sink=@DEFAULT_AUDIO_SINK@
 step=5%
 max=0.35
 
-case "$1" in
+case $1 in
     mute)
         wpctl set-mute $sink toggle
         ;;
