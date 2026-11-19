@@ -26,53 +26,22 @@ EOF
 alias in='sudo pacman --noconfirm -Syu --needed'
 
 in ttf-jetbrains-mono
-
-in sway
-in swaybg
-in jq
-
-in greetd
-in greetd-tuigreet
-sudo systemctl enable greetd.service
-
-in pipewire
-in pipewire-pulse
-in wireplumber
-
-in xdg-desktop-portal
-in xdg-desktop-portal-gtk
-in xdg-desktop-portal-wlr
-
+in sway swaybg jq
+in greetd greetd-tuigreet
 in firefox
-
 in fuzzel
-
-in mako
-in libnotify
-
-in mpv
-in imv
-
-in grim
-in slurp
-
+in mako libnotify
+in mpv imv
+in grim slurp
 in nnn
-
 in foot
-
-in helix
-
-in git
-
-in podman
-in podman-compose
-
-in make
-
-in yt-dlp
-in deno
-in ffmpeg
-
+in podman podman-compose
+in helix make git
+in yt-dlp deno ffmpeg
 in btop
+in pipewire pipewire-pulse wireplumber
+in xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+
+sudo systemctl enable greetd.service
 
 sudo reboot
