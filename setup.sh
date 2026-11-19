@@ -23,6 +23,7 @@ in ttf-jetbrains-mono
 
 in sway
 in swaybg
+in jq
 
 in greetd
 in greetd-tuigreet
