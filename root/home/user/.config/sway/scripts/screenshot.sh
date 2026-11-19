@@ -6,7 +6,7 @@ path=$out/$file
 
 mkdir -p $out
 
-case "$1" in
+case $1 in
     area)
         area=$(slurp) || exit 0
         grim -g "$area" $path
