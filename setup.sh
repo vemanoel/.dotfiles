@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 shopt -s dotglob nullglob
 
@@ -7,11 +7,11 @@ find . -type f \( -name '*.sh' -o -name '*.desktop' \) -exec chmod +x {} +
 root=$(dirname -- "$(realpath -- "$0")")/root
 
 while IFS=: read -r src dst sudo; do
-    for src in $dir/*; do
-        [ -e $src ] || [ -L $src ] || continue
-        target=$dst/${src##*/}
+    for path in $src/*; do
+        [ -e $path ] || [ -L $path ] || continue
+        target=$dst/${path##*/}
         $sudo rm -rf -- $target
-        $sudo cp -a -- $src $target
+        $sudo cp -a -- $path $target
     done
 done <<EOF
 $root/home/user:$HOME:
