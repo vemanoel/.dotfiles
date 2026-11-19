@@ -58,14 +58,14 @@ bindsym $mod+d exec env XDG_DATA_DIRS=$HOME/.config/fuzzel fuzzel
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
-bindsym $mod+Return exec $scripts/launch_term.sh home
-bindsym $mod+Shift+Return exec $scripts/launch_term.sh cwd
+bindsym $mod+Return exec $scripts/launch_term home
+bindsym $mod+Shift+Return exec $scripts/launch_term cwd
 
-bindsym $mod+p exec $scripts/screenshot.sh area
-bindsym $mod+Shift+p exec $scripts/screenshot.sh full
+bindsym $mod+p exec $scripts/screenshot area
+bindsym $mod+Shift+p exec $scripts/screenshot full
 
-bindsym $mod+Shift+u exec $scripts/volume.sh increase
-bindsym $mod+Shift+d exec $scripts/volume.sh decrease
+bindsym $mod+Shift+u exec $scripts/set_volume increase
+bindsym $mod+Shift+d exec $scripts/set_volume decrease
 
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit?' -B 'Yes, exit' 'swaymsg exit'
 
