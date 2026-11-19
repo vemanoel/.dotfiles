@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=firefox
+Name=Firefox
 Exec=/usr/bin/firefox
 Terminal=false
 Type=Application
