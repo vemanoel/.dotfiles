@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-shopt -s dotglob nullglob
+shopt -s dotglob nullglob expand_aliases
 
 root=$(dirname -- $(realpath -- $0))/root
 
