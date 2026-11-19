@@ -32,6 +32,7 @@ in fuzzel
 in firefox foot nnn btop
 in mako libnotify
 in mpv imv
+in pacman-contrib
 in grim slurp
 in helix make git podman podman-compose
 in yt-dlp deno ffmpeg
@@ -39,5 +40,6 @@ in pipewire pipewire-pulse wireplumber
 in xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
 
 sudo systemctl enable greetd.service
+sudo systemctl enable paccache.timer
 
 sudo reboot
