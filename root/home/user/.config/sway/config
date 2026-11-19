@@ -30,8 +30,8 @@ seat "*" {
 bar {
     swaybar_command swaybar
     position top
-    font pango:JetBrains Mono 11
-    height 19
+    font pango:JetBrains Mono 10
+    height 20
     colors {
         background $gray
         inactive_workspace $gray $gray $gray_fg
