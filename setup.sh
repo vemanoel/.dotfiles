@@ -6,7 +6,7 @@ root=$(dirname -- $(realpath -- $0))/root
 
 while IFS=: read -r src dst sudo; do
     for path in $src/*; do
-        [ -e $path ] || [ -L $path ] || continue
+        [[ -e $path || -L $path" ]] || continue
 
         target=$dst/${path##*/}
         $sudo rm -rf -- $target
