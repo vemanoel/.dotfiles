@@ -1,24 +1,13 @@
 #!/usr/bin/env bash
 
-shopt -s dotglob nullglob globstar expand_aliases
+sudo rm -rf /etc/{firefox,brave,greetd,tuigreet}
+sudo mv {firefox,brave,greetd,tuigreet} /etc
 
-root=$(dirname -- $(realpath -- $0))/root
+mv -f shell/* $HOME
 
-while IFS=: read -r src dst sudo; do
-    for path in $src/*; do
-        [[ -e $path || -L $path ]] || continue
-
-        target=$dst/${path##*/}
-
-        $sudo rm -rf -- $target
-        $sudo cp -r -- $path $target
-
-        $sudo chmod +x -- $target/**/*.{sh,desktop} 2>/dev/null
-    done
-done <<EOF
-$root/home/user:$HOME:
-$root/etc:/etc:sudo
-EOF
+mkdir -p $HOME/.config
+rm -rf $HOME/.config/{btop,foot,fuzzel,git,greetd,helix,mako,nnn,sway,yt-dlp}
+mv {btop,foot,fuzzel,git,greetd,helix,mako,nnn,sway,yt-dlp} $HOME/.config
 
 sudo pacman --noconfirm -Syu --needed \
     ttf-jetbrains-mono \

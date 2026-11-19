@@ -4,5 +4,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export NNN_OPTS="H"
-export NNN_OPENER="$HOME/.config/nnn/plugins/opener"
+alias hx='helix'
+
+export NNN_OPTS='H'
+export NNN_OPENER='$HOME/.config/nnn/plugins/opener'
