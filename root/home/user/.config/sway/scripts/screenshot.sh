@@ -16,4 +16,4 @@ case $1 in
         ;;
 esac
 
-notify-send -t 3000 "screenshot saved" $path
+notify-send "screenshot saved" $path
