@@ -25,7 +25,7 @@ seat "*" {
 bar {
     swaybar_command swaybar
     position top
-    height 22
+    height 20
     colors {
         background #141617
         inactive_workspace #141617 #141617 #DDC7A1
