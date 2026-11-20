@@ -108,7 +108,7 @@
       },
       {
         "url": "https://https://web.telegram.org",
-        "name": "telegram"
+        "name": "Telegram"
       },
       {
         "url": "https://roadmap.sh",
@@ -116,19 +116,15 @@
       },
       {
         "url": "https://github.com",
-        "name": "github"
+        "name": "GitHub"
       },
       {
         "url": "https://www.youtube.com",
-        "name": "youtube"
-      },
-      {
-        "url": "https://www.reddit.com",
-        "name": "reddit"
+        "name": "YouTube"
       },
       {
         "url": "https://cruzadasclube.com.br/jogo/categoria/id/1/n/cruzadas-classicas",
-        "name": "classic crosswords"
+        "name": "Cruzadas"
       }
     ]
   }
