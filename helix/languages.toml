@@ -1,3 +1,0 @@
-[[language]]
-name = "json"
-formatter = { command = "jq", args = [".", "--indent", "4", "--tab"] }
