@@ -7,15 +7,10 @@ set $down j
 set $up k
 set $right l
 
-set $gray #282828
-set $gray_fg #ddc7a1
-set $green #a9b665
-set $green_fg #32302f
-set $red #ea6962
-set $red_fg #32302f
-
 output * adaptive_sync off
-output * bg $images/sunset.png fill
+output * bg $images/stars.png fill
+
+font pango:JetBrains Mono 10
 
 input "type:keyboard" {
     xkb_layout us
@@ -30,19 +25,18 @@ seat "*" {
 bar {
     swaybar_command swaybar
     position top
-    font pango:JetBrains Mono 10
-    height 20
+    height 22
     colors {
-        background $gray
-        inactive_workspace $gray $gray $gray_fg
-        active_workspace $gray $gray $gray_fg
-        urgent_workspace $red $red $red_fg
-        focused_workspace $green $green $green_fg
+        background #141617
+        inactive_workspace #141617 #141617 #DDC7A1
+        active_workspace #DDC7A1 #DDC7A1 #141617
+        urgent_workspace #EA6962 #EA6962 #DDC7A1
+        focused_workspace #DDC7A1 #DDC7A1 #141617
     }
 }
 
-client.focused $green $gray $gray_fg $green $green
-client.focused_inactive $gray $gray $gray_fg $green $green
+client.focused #DDC7A1 #DDC7A1 #141617 #ff0000 #DDC7A1
+client.unfocused #141617 #141617 #DDC7A1 #ff0000 #141617
 
 focus_follows_mouse no
 smart_borders on
