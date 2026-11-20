@@ -18,7 +18,7 @@ esac
 
 current=$(wpctl get-volume $sink)
 
-if [[ $current == *MUTED* ]];; then
+if [[ $current == *MUTED* ]]; then
     msg="MUTED"
 else
     read -r _ value <<< $current
