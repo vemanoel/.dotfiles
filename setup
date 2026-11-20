@@ -6,7 +6,7 @@ find . -type f -exec grep -Ilx '#!/usr/bin/env bash' {} + | xargs -r chmod +x
 sudo rm -rf /etc/{firefox,brave,greetd,tuigreet}
 sudo mv {firefox,brave,greetd,tuigreet} /etc
 
-mv -f shell/* $HOME
+mv -f shell/.* $HOME
 
 mkdir -p $HOME/.config
 rm -rf $HOME/.config/{btop,foot,fuzzel,git,greetd,helix,mako,nnn,sway,yt-dlp}
