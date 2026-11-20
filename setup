@@ -14,7 +14,8 @@ mv {btop,foot,fuzzel,git,greetd,helix,mako,nnn,sway,yt-dlp} $HOME/.config
 
 sudo pacman --noconfirm -Syu --needed \
     ttf-jetbrains-mono \
-    sway swaybg jq \
+    sway swaybg \
+    jq \
     greetd greetd-tuigreet \
     fuzzel \
     firefox foot nnn btop \
@@ -26,6 +27,12 @@ sudo pacman --noconfirm -Syu --needed \
     yt-dlp deno ffmpeg \
     pipewire pipewire-pulse wireplumber \
     xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+
+curl -fL -O $(curl -s https://api.github.com/repos/be5invis/Iosevka/releases/latest |
+    jq -r '.assets[] | select(.name | startswith("PkgTTC-IosevkaTerm-")) | .browser_download_url')
+
+curl -fL -O $(curl -s https://api.github.com/repos/be5invis/Iosevka/releases/latest |
+    jq -r '.assets[] | select(.name | startswith("PkgTTC-IosevkaAile-")) | .browser_download_url')
 
 sudo systemctl enable greetd.service paccache.timer
 
