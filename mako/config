@@ -5,19 +5,15 @@ history=0
 max-history=0
 markup=0
 default-timeout=3000
-
 icons=0
-
-width=300
+width=260
 height=100
 padding=8
 margin=8
 outer-margin=8
-background-color=#282828
-
+background-color=#141617
 font=JetBrains Mono NL 9
-text-color=#ddc7a1
-
+text-color=#DDC7A1
 border-size=1
 border-radius=0
-border-color=#a9b665
+border-color=#DDC7A1
