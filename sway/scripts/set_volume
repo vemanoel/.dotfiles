@@ -25,4 +25,4 @@ else
     msg=$(( ${value/./} ))%
 fi
 
-notify-send -h string:x-canonical-private-synchronous:volume "volume" $msg
+notify-send -h string:x-canonical-private-synchronous:volume "Volume" $msg
