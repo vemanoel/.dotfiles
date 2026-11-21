@@ -20,6 +20,7 @@ sudo pacman --noconfirm -Syu --needed \
     firefox foot nnn btop \
     mako libnotify \
     mpv swayimg \
+    wlsunset \
     pacman-contrib \
     grim slurp \
     helix make git podman podman-compose \
