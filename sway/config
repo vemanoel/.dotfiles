@@ -10,7 +10,7 @@ set $right l
 output * adaptive_sync off
 output * bg $images/stars.png fill
 
-font pango:JetBrains Mono NL 10
+font pango:Iosevka Aile 10
 
 input "type:keyboard" {
     xkb_layout us
