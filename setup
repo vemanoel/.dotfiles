@@ -13,7 +13,6 @@ rm -rf $HOME/.config/{btop,foot,fuzzel,git,greetd,helix,mako,nnn,sway,yt-dlp}
 mv {btop,foot,fuzzel,git,greetd,helix,mako,nnn,sway,yt-dlp} $HOME/.config
 
 sudo pacman --noconfirm -Syu --needed \
-    ttf-jetbrains-mono \
     sway swaybg \
     jq \
     greetd greetd-tuigreet \
