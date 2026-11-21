@@ -130,5 +130,7 @@ bindsym $mod+r mode "resize"
 
 exec mako
 
+exec wlsunset -T 6500 -t 4500 -S 04:00 -s 20:00
+
 include "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
 include /etc/sway/config.d/*
