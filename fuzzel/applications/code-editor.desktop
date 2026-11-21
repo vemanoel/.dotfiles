@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Helix
+Name=Code Editor
 Exec=/usr/bin/helix
 Terminal=true
 Type=Application
